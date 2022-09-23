@@ -43,7 +43,7 @@ module.exports = Object.seal({
 "serverBind": "0.0.0.0",
 "serverTracker": 0,
 "serverGamemode": 0,
-"serverBots": 0,
+"serverBots": 250,
 "serverViewBaseX": 1920,
 "serverViewBaseY": 1080,
 "serverMinScale": 0.15,
@@ -87,17 +87,17 @@ module.exports = Object.seal({
 
 // [BORDER]
 // Border size (vanilla 14142.135623730952)
-"borderWidth": 14142.135623730952,
-"borderHeight": 14142.135623730952,
+"borderWidth": 28284.2712475,
+"borderHeight": 28284.2712475,
 
 // [FOOD]
 // foodMinSize: vanilla 10 (mass: 10*10/100: 1 mass)
 // foodMaxSize: vanilla 20 (mass: 20*20/100: 4 mass)
 // foodAmount: The number of food to spawn
 // foodMassGrow: Enable food mass grow ?
-"foodMinSize": 10,
-"foodMaxSize": 20,
-"foodAmount": 700,
+"foodMinSize": 20,
+"foodMaxSize": 40,
+"foodAmount": 2500,
 "foodMassGrow": 1,
 
 // [VIRUSES]
@@ -114,8 +114,8 @@ module.exports = Object.seal({
 "virusMaxSize": 141.421356237,
 "virusMaxPoppedSize": 60,
 "virusEqualPopSize": 0,
-"virusAmount": 50,
-"virusMaxAmount": 100,
+"virusAmount": 25,
+"virusMaxAmount": 50,
 "motherCellMaxMass": 0,
 "virusVelocity": 780,
 "virusMaxCells": 0,
@@ -127,9 +127,9 @@ module.exports = Object.seal({
 // ejectSpawnPercent: Chance for a player to spawn from ejected mass. 0.5: 50% (set to 0 to disable)
 // ejectVirus: Whether or not players can eject viruses instead of mass
 // ejectVelocity: Velocity of ejecting cells (speed and distance)
-"ejectSize": 36.06,
-"ejectSizeLoss": 42.43,
-"ejectCooldown": 3,
+"ejectSize": 75,
+"ejectSizeLoss": 25,
+"ejectCooldown": 2,
 "ejectSpawnPercent": 0.5,
 "ejectVirus": 0,
 "ejectVelocity": 780,
@@ -151,18 +151,18 @@ module.exports = Object.seal({
 // playerDisconnectTime: Time in seconds before a disconnected player's cell is removed from the server (Set to -1 to never remove)
 // splitVelocity: Velocity of splitting playercells (speed and distance)
 "playerMinSize": 31.6227766017,
-"playerMaxSize": 1500,
+"playerMaxSize": 3500,
 "playerMinSplitSize": 59.16079783,
 "playerMinEjectSize": 59.16079783,
-"playerStartSize": 31.6227766017,
-"playerMaxCells": 16,
-"playerSpeed": 1,
-"playerDecayRate": 0.002,
+"playerStartSize": 100,
+"playerMaxCells": 32,
+"playerSpeed": 2,
+"playerDecayRate": 0.001,
 "playerDecayCap": 0,
-"playerRecombineTime": 30,
+"playerRecombineTime": 1,
 "playerMaxNickLength": 15,
 "playerDisconnectTime": -1,
-"splitVelocity": 780,
+"splitVelocity": 1560,
 
 // [MINIONS]
 // Custom minion settings
